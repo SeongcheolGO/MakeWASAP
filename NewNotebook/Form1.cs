@@ -29,6 +29,7 @@ namespace NewNotebook
             public string transNo = "변환 실패";
             public string ErrorMessage = "오류 창입니다.";
             public string sorr = "미안합니다.";
+     
         }
 
 
@@ -68,6 +69,13 @@ namespace NewNotebook
         }
 
         private void PrintInfo_Click(object sender, EventArgs e)
+        {
+            PrintInfo info = new PrintInfo();
+
+            info.Show();
+        }
+
+        private void printicon_Click(object sender, EventArgs e)
         {
             PrintInfo info = new PrintInfo();
 

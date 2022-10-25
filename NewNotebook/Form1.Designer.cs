@@ -42,7 +42,7 @@
       // trans
       // 
       this.trans.Location = new System.Drawing.Point(11, 12);
-      this.trans.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.trans.Margin = new System.Windows.Forms.Padding(2);
       this.trans.Name = "trans";
       this.trans.Size = new System.Drawing.Size(86, 63);
       this.trans.TabIndex = 0;
@@ -53,7 +53,7 @@
       // Error
       // 
       this.Error.Location = new System.Drawing.Point(438, 12);
-      this.Error.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.Error.Margin = new System.Windows.Forms.Padding(2);
       this.Error.Name = "Error";
       this.Error.Size = new System.Drawing.Size(111, 26);
       this.Error.TabIndex = 1;
@@ -74,7 +74,7 @@
       // InfomationCorrection
       // 
       this.InfomationCorrection.Location = new System.Drawing.Point(193, 12);
-      this.InfomationCorrection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.InfomationCorrection.Margin = new System.Windows.Forms.Padding(2);
       this.InfomationCorrection.Name = "InfomationCorrection";
       this.InfomationCorrection.Size = new System.Drawing.Size(86, 63);
       this.InfomationCorrection.TabIndex = 3;
@@ -85,7 +85,7 @@
       // TransPda
       // 
       this.TransPda.Location = new System.Drawing.Point(464, 230);
-      this.TransPda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.TransPda.Margin = new System.Windows.Forms.Padding(2);
       this.TransPda.Name = "TransPda";
       this.TransPda.Size = new System.Drawing.Size(86, 63);
       this.TransPda.TabIndex = 4;
@@ -95,7 +95,7 @@
       // TransPc
       // 
       this.TransPc.Location = new System.Drawing.Point(464, 164);
-      this.TransPc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.TransPc.Margin = new System.Windows.Forms.Padding(2);
       this.TransPc.Name = "TransPc";
       this.TransPc.Size = new System.Drawing.Size(86, 63);
       this.TransPc.TabIndex = 5;
@@ -123,6 +123,7 @@
       this.printicon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
       this.printicon.TabIndex = 7;
       this.printicon.TabStop = false;
+      this.printicon.Click += new System.EventHandler(this.printicon_Click);
       // 
       // Form1
       // 
@@ -137,7 +138,7 @@
       this.Controls.Add(this.button1);
       this.Controls.Add(this.Error);
       this.Controls.Add(this.trans);
-      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+      this.Margin = new System.Windows.Forms.Padding(2);
       this.Name = "Form1";
       this.Text = "Practice";
       ((System.ComponentModel.ISupportInitialize)(this.printicon)).EndInit();
