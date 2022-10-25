@@ -35,6 +35,8 @@
       this.TransPda = new System.Windows.Forms.Button();
       this.TransPc = new System.Windows.Forms.Button();
       this.PrintInfo = new System.Windows.Forms.Button();
+      this.printicon = new System.Windows.Forms.PictureBox();
+      ((System.ComponentModel.ISupportInitialize)(this.printicon)).BeginInit();
       this.SuspendLayout();
       // 
       // trans
@@ -107,14 +109,27 @@
       this.PrintInfo.Size = new System.Drawing.Size(86, 63);
       this.PrintInfo.TabIndex = 6;
       this.PrintInfo.Text = "출력";
+      this.PrintInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
       this.PrintInfo.UseVisualStyleBackColor = true;
       this.PrintInfo.Click += new System.EventHandler(this.PrintInfo_Click);
+      // 
+      // printicon
+      // 
+      this.printicon.BackColor = System.Drawing.SystemColors.Control;
+      this.printicon.Image = global::NewNotebook.Properties.Resources.printicon;
+      this.printicon.Location = new System.Drawing.Point(294, 24);
+      this.printicon.Name = "printicon";
+      this.printicon.Size = new System.Drawing.Size(42, 35);
+      this.printicon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+      this.printicon.TabIndex = 7;
+      this.printicon.TabStop = false;
       // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(560, 300);
+      this.Controls.Add(this.printicon);
       this.Controls.Add(this.PrintInfo);
       this.Controls.Add(this.TransPc);
       this.Controls.Add(this.TransPda);
@@ -125,6 +140,7 @@
       this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Name = "Form1";
       this.Text = "Practice";
+      ((System.ComponentModel.ISupportInitialize)(this.printicon)).EndInit();
       this.ResumeLayout(false);
 
         }
@@ -138,6 +154,7 @@
         private System.Windows.Forms.Button TransPda;
         private System.Windows.Forms.Button TransPc;
     private System.Windows.Forms.Button PrintInfo;
+    private System.Windows.Forms.PictureBox printicon;
   }
 }
 
