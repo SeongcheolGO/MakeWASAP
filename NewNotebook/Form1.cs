@@ -66,5 +66,12 @@ namespace NewNotebook
 
             info.Show();
         }
+
+        private void PrintInfo_Click(object sender, EventArgs e)
+        {
+            PrintInfo info = new PrintInfo();
+
+            info.Show();
+        }
     }
 }

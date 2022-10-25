@@ -34,14 +34,15 @@
       this.InfomationCorrection = new System.Windows.Forms.Button();
       this.TransPda = new System.Windows.Forms.Button();
       this.TransPc = new System.Windows.Forms.Button();
+      this.PrintInfo = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // trans
       // 
-      this.trans.Location = new System.Drawing.Point(18, 21);
-      this.trans.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+      this.trans.Location = new System.Drawing.Point(11, 12);
+      this.trans.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.trans.Name = "trans";
-      this.trans.Size = new System.Drawing.Size(135, 110);
+      this.trans.Size = new System.Drawing.Size(86, 63);
       this.trans.TabIndex = 0;
       this.trans.Text = "전송";
       this.trans.UseVisualStyleBackColor = true;
@@ -49,10 +50,10 @@
       // 
       // Error
       // 
-      this.Error.Location = new System.Drawing.Point(689, 21);
-      this.Error.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+      this.Error.Location = new System.Drawing.Point(438, 12);
+      this.Error.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Error.Name = "Error";
-      this.Error.Size = new System.Drawing.Size(175, 46);
+      this.Error.Size = new System.Drawing.Size(111, 26);
       this.Error.TabIndex = 1;
       this.Error.Text = "오류창";
       this.Error.UseVisualStyleBackColor = true;
@@ -60,10 +61,9 @@
       // 
       // button1
       // 
-      this.button1.Location = new System.Drawing.Point(161, 21);
-      this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+      this.button1.Location = new System.Drawing.Point(102, 12);
       this.button1.Name = "button1";
-      this.button1.Size = new System.Drawing.Size(135, 110);
+      this.button1.Size = new System.Drawing.Size(86, 63);
       this.button1.TabIndex = 2;
       this.button1.Text = "PDA 정보";
       this.button1.UseVisualStyleBackColor = true;
@@ -71,9 +71,10 @@
       // 
       // InfomationCorrection
       // 
-      this.InfomationCorrection.Location = new System.Drawing.Point(303, 21);
+      this.InfomationCorrection.Location = new System.Drawing.Point(193, 12);
+      this.InfomationCorrection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.InfomationCorrection.Name = "InfomationCorrection";
-      this.InfomationCorrection.Size = new System.Drawing.Size(135, 110);
+      this.InfomationCorrection.Size = new System.Drawing.Size(86, 63);
       this.InfomationCorrection.TabIndex = 3;
       this.InfomationCorrection.Text = "정보 입력";
       this.InfomationCorrection.UseVisualStyleBackColor = true;
@@ -81,34 +82,47 @@
       // 
       // TransPda
       // 
-      this.TransPda.Location = new System.Drawing.Point(729, 403);
+      this.TransPda.Location = new System.Drawing.Point(464, 230);
+      this.TransPda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.TransPda.Name = "TransPda";
-      this.TransPda.Size = new System.Drawing.Size(135, 110);
+      this.TransPda.Size = new System.Drawing.Size(86, 63);
       this.TransPda.TabIndex = 4;
       this.TransPda.Text = "PCtoPDA";
       this.TransPda.UseVisualStyleBackColor = true;
       // 
       // TransPc
       // 
-      this.TransPc.Location = new System.Drawing.Point(729, 287);
+      this.TransPc.Location = new System.Drawing.Point(464, 164);
+      this.TransPc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.TransPc.Name = "TransPc";
-      this.TransPc.Size = new System.Drawing.Size(135, 110);
+      this.TransPc.Size = new System.Drawing.Size(86, 63);
       this.TransPc.TabIndex = 5;
       this.TransPc.Text = "PDAtoPC";
       this.TransPc.UseVisualStyleBackColor = true;
       // 
+      // PrintInfo
+      // 
+      this.PrintInfo.Location = new System.Drawing.Point(284, 12);
+      this.PrintInfo.Name = "PrintInfo";
+      this.PrintInfo.Size = new System.Drawing.Size(86, 63);
+      this.PrintInfo.TabIndex = 6;
+      this.PrintInfo.Text = "출력";
+      this.PrintInfo.UseVisualStyleBackColor = true;
+      this.PrintInfo.Click += new System.EventHandler(this.PrintInfo_Click);
+      // 
       // Form1
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(880, 525);
+      this.ClientSize = new System.Drawing.Size(560, 300);
+      this.Controls.Add(this.PrintInfo);
       this.Controls.Add(this.TransPc);
       this.Controls.Add(this.TransPda);
       this.Controls.Add(this.InfomationCorrection);
       this.Controls.Add(this.button1);
       this.Controls.Add(this.Error);
       this.Controls.Add(this.trans);
-      this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Name = "Form1";
       this.Text = "Practice";
       this.ResumeLayout(false);
@@ -123,6 +137,7 @@
         private System.Windows.Forms.Button InfomationCorrection;
         private System.Windows.Forms.Button TransPda;
         private System.Windows.Forms.Button TransPc;
-    }
+    private System.Windows.Forms.Button PrintInfo;
+  }
 }
 
