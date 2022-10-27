@@ -48,13 +48,13 @@ namespace NewNotebook
 
 
 
-    private bool CheckExistDataFile()
+    public bool CheckExistDataFile()
     {
       bool exist = File.Exists(DataFileName);
       return exist;
     }
 
-    private string ReadDataFile()
+    public string ReadDataFile()
     {
       string text = System.IO.File.ReadAllText(DataFileName);
       return text;
